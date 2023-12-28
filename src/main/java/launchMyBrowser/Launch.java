@@ -14,7 +14,7 @@ public class Launch {
 driver = new ChromeDriver();
 driver.get("https://so1.replicon.com");
 driver.close();
-System.out.println("Done");
+System.out.println("completed");
 	}
 
 }
