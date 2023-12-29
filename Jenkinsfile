@@ -24,15 +24,9 @@ pipeline
                  {
             steps 
                 {
-                echo 'completed'
+                git credentialsId: '38dacc97-545d-45ec-bd25-999bb79def0a', url: 'https://github.com/navaneethhk20/SeleniumTest.git'
                }
              }
         } 
-       post
-        {
-         always
-         {
-         emailext body: 'Check results', subject: 'Pipeline results', to: 'hknavaneeth@gmail.com' 
-         }
-       } 
+    
  }      
